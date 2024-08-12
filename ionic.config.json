@@ -1,0 +1,7 @@
+{
+  "name": "angular-firebase-cloud-functions",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

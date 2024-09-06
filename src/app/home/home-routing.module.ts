@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+  },
+  {
+    path: ':title',
+    loadChildren: () => import('../notes-details-page/notes-details-page.module').then(m => m.NotesDetailsPagePageModule)
+}
 ];
 
 @NgModule({

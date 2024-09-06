@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="info" (click)="cancel()" >
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        <ion-label>My Notes</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">Save</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-title class="ion-padding">
+    <strong>Add New Note</strong>
+  </ion-title>
+  <form>
+    <ion-input type="text" fill="solid" label="Title" labelPlacement="floating" helperText="Enter a valid Title"
+      [(ngModel)]="title" [ngModelOptions]="{standalone: true}"></ion-input>
+
+
+    <ion-input type="text" fill="solid" label="Name" labelPlacement="floating" helperText="Enter a valid name"
+      [(ngModel)]="name" [ngModelOptions]="{standalone: true}"></ion-input>
+
+
+    <ion-textarea label="Description" labelPlacement="floating" placeholder="Enter Description"
+      [(ngModel)]="description" [ngModelOptions]="{standalone: true}"></ion-textarea>
+
+  </form>
+</ion-content>
